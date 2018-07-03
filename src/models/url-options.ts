@@ -1,11 +1,4 @@
-export class GeneratePdfRequest {
-
-    public fromUrl: boolean;
-    public urlOptions: UrlOptions;
-
-}
-
-class UrlOptions{
+export class UrlOptions{
     public method: string = 'GET';
     public protocol: string = 'http:';
     public host: string;

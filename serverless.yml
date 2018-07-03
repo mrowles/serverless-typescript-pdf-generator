@@ -48,11 +48,6 @@ custom:
                 - 'host'
           required:
             - 'fromUrl'
-#          if:
-#            properties:
-#              fromUrl: true
-#          then:
-#            required: urlOptions
       - name: GeneratePdfResponse
         description: "Returns a presigned url of the generated pdf"
         contentType: "application/json"
@@ -72,7 +67,7 @@ custom:
 
 provider:
   name: aws
-  runtime: nodejs6.10
+  runtime: nodejs8.10
   stage: ${opt:stage, self:custom.defaultStage}
   region: ap-southeast-2
   environment:
@@ -151,7 +146,7 @@ functions:
         reqValidatorName: BodyRequestValidator
         documentation:
           summary: "Creates a pdf"
-          description: "Can be created from either a url or a dynamodb source (not yet implemented"
+          description: "Can be created from either a url or a dynamodb source (not yet implemented)"
           requestBody:
             description: "Request body description"
           requestModels:

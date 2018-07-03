@@ -7,12 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "@types/node": "^9.3.0",
-    "aws-sdk": "^2.185.0",
-    "copy-webpack-plugin": "^4.3.1",
-    "serverless-webpack": "^3.0.0",
+    "aws-sdk": "^2.259.1",
+    "copy-webpack-plugin": "^4.5.1",
     "serverless-aws-documentation": "^1.0.0",
     "serverless-reqvalidator-plugin": "^1.0.1",
+    "serverless-webpack": "^3.0.0",
     "ts-loader": "^3.2.0",
     "tslint": "^5.10.0",
     "tslint-microsoft-contrib": "^5.0.3",
@@ -20,10 +19,20 @@
     "webpack": "^3.6.0"
   },
   "dependencies": {
+    "@types/aws-lambda": "^8.10.1",
+    "@types/chai": "^4.0.4",
+    "@types/html-pdf": "^2.1.2",
+    "@types/mocha": "^2.2.44",
+    "@types/node": "^7.0.46",
+    "@types/webpack": "^3.0.14",
     "buffer": "^5.0.8",
     "fs-extra": "^5.0.0",
     "memorystream": "^0.3.1",
-    "wkhtmltopdf": "^0.3.4"
+    "wkhtmltopdf": "^0.3.4",
+    "angular2-uuid": "latest",
+    "aws-lambda": "latest",
+    "http-status-codes": "latest",
+    "html-pdf": "latest"
   },
   "license": "MIT"
 }
